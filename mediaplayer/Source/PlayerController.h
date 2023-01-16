@@ -21,7 +21,7 @@ public:
     ChoiceParameter type { { "Normal", "Ladder-Filter"}, 1, "Type"};
     SliderParameter Fc { { 20.0, 20000.0 }, 0.5, 440.0f, "Frequency cut-off", "Hz" };
     SliderParameter r { { 0.0, 4.0 }, 1.0, 0.2, "Resonance" };
-    SliderParameter Ia { { 0.0, 10.0 }, 1.0, 1.0, "Input amplitude" };
+    SliderParameter Ia { { 0.0, 2.0 }, 0.5, 0.2, "Input amplitude" };
 
     std::vector<DSPDemoParameterBase*> parameters { &type, &Ia, &Fc, &r };
     double sampleRate = 0.0;
